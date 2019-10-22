@@ -4,19 +4,17 @@
 [![younokio](http://img.youtube.com/vi/6guHZoSqejA/0.jpg)](http://www.youtube.com/watch?v=6guHZoSqejA "younokio")
 
 YouNokio is an _interactive installation that allows people to connect to a string operated puppet_.
-
-KinectSpace is an application that sends several specific Kinect Skeleton data via OSC - with float values between 0 and 1.
-Hands, Kness (x) shoulders (y) tilt (z). It was used at Databending.net to control a string puppet (sources in processing folder)
+KinectSpace is an application that sends Kinect Skeleton data via OSC (Hands, Kness (x) shoulders (y) tilt (z)).
 
 ## How to build it
 
 Build your own kinect marionette
 
-![diagram](../media/younokio_diagram.png)
+![younokio_diagram](https://user-images.githubusercontent.com/724604/67327163-ca623f00-f517-11e9-840d-de3dd6f17e4a.png)
 
 ### Kinect (hardware and software)
 
-Download and unzip [Kinect SDK](http://research.microsoft.com/en-us/um/redmond/projects/kinectsdk/download.aspx) ,get [cinder](http://libcinder.org/)). Install visual studio 2011 (trial) from Microsoft. Fast forward learn about c++, openGL, kinect sdk, cinder, and how to make a new Cinder project in VS.
+Download and unzip [Kinect SDK](http://research.microsoft.com/en-us/um/redmond/projects/kinectsdk/download.aspx), get [cinder](http://libcinder.org/)). Install visual studio 2011 (trial) from Microsoft. Fast forward learn about c++, openGL, kinect sdk, cinder, and how to make a new Cinder project in VS.
 
 Thanks to [bantherewind](http://bantherewind.com/kinect-sdk-block-for-cinder) it was very easy to get the skeleton data. I made a small visualization to understand how the 3d vectors work then adapted the code to limit to one active skeleton and send via OSC hands and knees (and later pan and tilt) in float values from 0 to 1. 
 
